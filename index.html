@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="combined">
+    <div class="input">
+      <br>
+      <p>User profile</p>
+      <br>
+      <div>
+        <input type="text" placeholder="Enter your name" id="input-name">
+        <input type="text" placeholder="Profile" id="input-profile">
+        <input type="text" placeholder="LinkedIn" id="input-linkedin">
+        <input type="text" placeholder="address" id="input-address">
+        <input type="text" placeholder="Email" id="input-email" required>
+        <input type="text" placeholder="phone no" id="input-phone" required>
+      </div>
+      <p>Education</p>
+      <input type="text" placeholder="College name" id="input-college">
+      <input type="text" placeholder="College address" id="input-college_address">
+      <input type="text" placeholder="Course name" id="input-course">
+      <input type="text" placeholder=" Enter CGPA " id="input-cgpa">
+      <p>SKILL</p>
+      <div id="skills-container">
+        <input type="text" placeholder="Enter a skill" class="input-skill">
+      </div>
+      <button id="add-skill">Add Skill</button>
+
+      <br><br>
+      <p>PROJECTS</p>
+      <div id="projects-container">
+        <input type="text" placeholder="Enter a project name" class="input-project">
+        <input type="text" placeholder="Enter project description" class="input-project-description">
+      </div>
+      <button id="add-project">Add Project</button>
+
+      <br><br>
+      <p>ACHIEVEMENTS</p>
+      <div id="achievements-container">
+        <input type="text" placeholder="Enter an achievement" class="input-achievement">
+      </div>
+      <button id="add-achievement">Add Achievement</button>
+      <br><br>
+      <button id="download">Download PDF</button>
+    </div>
+    <br><br>
+    <div class="preview" id="resume-content">
+      <div class="intro">
+        <div class="navbar">
+          <h1 id="intro-name"></h1>
+          <span id="intro-profile"></span>
+          <span id="intro-address"></span>
+          <br>
+          <a id="intro-email"></a>
+          <a href="" id="intro-linkedin"></a>
+          <span id="intro-phone"></span>
+        </div>
+        <h2 id="education-nav">Education</h2>
+        <section class="Education">
+          <span id="intro-college"></span>
+          <span id="intro-college_address"></span>
+          <span id="intro-course"></span>
+          <span id="intro-cgpa"></span>
+        </section>
+        <h2>SKILL</h2>
+        <hr>
+        <section class="skill">
+          <span id="intro-skill"></span>
+        </section>
+        <h2>PROJECTS</h2>
+        <hr>
+        <section class="projects">
+          <ul id="intro-projects"></ul>
+        </section>
+        <h2>ACHIEVEMENTS</h2>
+        <hr>
+        <ul id="intro-achievements"></ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/plugins/html.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</html>
